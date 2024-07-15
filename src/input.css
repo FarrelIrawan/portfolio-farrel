@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    font-family: "raleway";
+    background-color: #0f172a;
+}
+
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-thirdly bg-opacity-80;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-txt;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+#desc span {
+    @apply text-txt;
+    @apply font-medium;
+    @apply text-xl;
+}
+
+.blob {
+    @apply absolute;
+    @apply -bottom-0;
+    @apply sm:scale-90;
+    @apply md:scale-75;
+    @apply -z-10;
+}
+
+
+.backToTop {
+    @apply hidden
+    @apply transition
+    @apply duration-150
+    @apply ease-in-out
+}
